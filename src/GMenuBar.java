@@ -1,12 +1,12 @@
-
-
 import javax.swing.*;
 
 public class GMenuBar extends JMenuBar {
-    private GFileMenu fileMenu;
+	// components
+	private GFileMenu fileMenu;
+	// associations
 
-    public GMenuBar() {
-
-    }
-
+	public GMenuBar() {
+		this.fileMenu = new GFileMenu();
+		this.add(this.fileMenu);
+	}
 }
