@@ -12,9 +12,9 @@ Java Swing 기반으로 구현한 간단한 그래픽 에디터 프로젝트입�
 - Swing (GUI)
 
 ## Structure
-- `GMainFrame` : 전체 프레임 구성
-- `GDrawingPanel` : 도형 그리기 영역
-- `GMenuBar` : 메뉴 구성
+- `frames.GMainFrame` : 전체 프레임 구성
+- `frames.GDrawingPanel` : 도형 그리기 영역
+- `frames.GMenuBar` : 메뉴 구성
 - `GToolBar` : 도구 선택 기능
 
 ## How to Run
