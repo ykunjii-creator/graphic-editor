@@ -8,8 +8,9 @@ import java.awt.event.ActionListener;
 
 public class GShapeToolBar extends JToolBar {
     private GConstants.EShapeType eShapeType;
+
     public GConstants.EShapeType getShapeType() {
-        return eShapeType;
+        return this.eShapeType;
     }
 
     public GShapeToolBar() {
@@ -23,15 +24,13 @@ public class GShapeToolBar extends JToolBar {
             radioButton.addActionListener(actionHandler);
             radioButton.setActionCommand(type.toString());
         }
-        ((JRadioButton)(this.getComponentAtIndex(GConstants.EShapeType.eSelect.ordinal()))).doClick();
+        ((JRadioButton) (this.getComponentAtIndex(GConstants.EShapeType.eSelect.ordinal()))).doClick();
     }
 
     private class ActionHandler implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            // "eSelec" ==> eSelect
             eShapeType = GConstants.EShapeType.valueOf(e.getActionCommand());
         }
     }
-
 }

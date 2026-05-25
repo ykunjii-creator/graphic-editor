@@ -1,16 +1,14 @@
 package frames;
 
-import menus.GFileMenu;
-
 import javax.swing.*;
 
 public class GMenuBar extends JMenuBar {
     // components
-    private GFileMenu fileMenu;
+    private menus.GFileMenu fileMenu;
     // associations
 
     public GMenuBar() {
-        this.fileMenu = new GFileMenu();
+        this.fileMenu = new menus.GFileMenu();
         this.add(this.fileMenu);
     }
 }
